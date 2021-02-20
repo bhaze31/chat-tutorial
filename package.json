@@ -1,0 +1,22 @@
+{
+  "name": "chatapplicationwithnodejsandsocketio",
+  "version": "1.0.0",
+  "description": "tutorial for building a chat application with node and socketio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "socketio",
+    "websockets",
+    "node",
+    "chat",
+    "elasticsearch"
+  ],
+  "author": "Brian Hasenstab",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1",
+    "socket.io": "3.0.0"
+  }
+}

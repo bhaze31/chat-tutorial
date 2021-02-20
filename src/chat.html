@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Chat Demo</title>
+    <link href="/css/index.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="chat-wrapper">
+        <div id="chats-column">
+        </div>
+        <div id="message-column">
+            <div id="messages">
+            </div>
+            <div id="send-message">
+                <textarea placeholder="Message" type="text" id="message-field" onkeypress="typedInBox(event, self)"></textarea>
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+        <div id="users-column">
+        </div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>

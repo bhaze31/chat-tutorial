@@ -4,7 +4,8 @@
   "description": "tutorial for building a chat application with node and socketio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:dev": "nodemon index.js"
   },
   "keywords": [
     "socketio",
@@ -16,7 +17,13 @@
   "author": "Brian Hasenstab",
   "license": "ISC",
   "dependencies": {
-    "express": "4.17.1",
-    "socket.io": "3.0.0"
+    "express": "^4.17.1",
+    "socket.io": "^3.0.0"
+  },
+  "engines": {
+    "node": "14.15.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
   }
 }

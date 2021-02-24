@@ -1,25 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Chat Demo</title>
+<html>
+  <head>
+    <title>SocketIO Demo</title>
+    <!-- Importing the stylesheet -->
     <link href="/css/index.css" rel="stylesheet" type="text/css" />
-</head>
-<body>
+  </head>
+  <body>
     <div id="chat-wrapper">
-        <div id="chats-column">
+      <!-- Where the list of chats will eventually be -->
+      <div id="chats-column">
+      </div>
+
+      <!-- Main column for sending/receiving messages -->
+      <div id="message-column">
+        <!-- Where the current group information will go -->
+        <div id="group-header">
         </div>
-        <div id="message-column">
-            <div id="messages">
-            </div>
-            <div id="send-message">
-                <textarea placeholder="Message" type="text" id="message-field" onkeypress="typedInBox(event, self)"></textarea>
-                <button onclick="sendMessage()">Send</button>
-            </div>
+
+        <!-- Where the messages will be displayed -->
+        <div id="messages">
         </div>
-        <div id="users-column">
+
+        <!-- Where we will be sending messages from -->
+        <div id="send-message">
         </div>
+      </div>
+
+      <!-- Current group' user information -->
+      <div id="users-column">
+      </div>
     </div>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/js/index.js"></script>
-</body>
+  </body>
 </html>
